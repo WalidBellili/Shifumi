@@ -3,41 +3,99 @@ body {
   width: 100%;
 }
 header {
-  width: 100%;
-  height: 100px;
-  text-align: center;
-}
-.signs-container {
-  height: 50vh;
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.signs-container article {
-  height: 100px;
-  width: 100px;
-}
-main {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.first-container,
-.second-container {
-  height: 500px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-aside {
-  width: 100%;
+  background: yellow;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+main {
+  width: 100%;
+  height: 620px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .first-container,
+.second-container {
+  background: blue;
+  height: 90%;
+  width: 250px;
+  margin: 10px;
+} */
+.first-container {
+  height: 90%;
+  width: 200px;
+  background: blue;
+}
+button {
+  height: 170px;
+  width: 170px;
+  border: 2px solid transparent;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.second-container {
+  width: 300px;
+  height: 90%;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.beind-the-parts {
+  width: 300px;
+  height: 90%;
+  background: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  width: 250px;
+  height: 250px;
+  background: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score {
+  width: 250px;
+  height: 150px;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.arrowUp {
+  transform: rotate(-90deg);
+  border-radius: 100px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.arrowDown {
+  transform: rotate(90deg);
+  border-radius: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* .arrowUp:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  transform: rotate(-90deg);
+}
+.arrowDown:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+} */

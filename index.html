@@ -1,93 +1,133 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Shifumi</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
   </head>
   <body>
     <header>
-      <h1>Let's play to the Shifumi of the death</h1>
+      <h1>TITLE</h1>
     </header>
     <main>
-      <section class="signs-container">
-        <div class="arrow-up">
-          <img src="./arrow.png" alt="arrow up" height="100" width="100" />
-        </div>
-        <article>
-          <img
-            src="./1-pierre.jpg"
-            alt="img of stone"
-            height="100"
-            width="100"
-          />
-        </article>
-        <article>
-          <img
-            src="./2-feuille.jpg"
-            alt="img of cissors"
-            height="100"
-            width="100"
-          />
-        </article>
-        <article>
-          <img
-            src="./3-ciseaux.jpg"
-            alt="img of paper"
-            height="100"
-            width="100"
-          />
-        </article>
-        <div class="arrow-up">
-          <img src="./arrow.png" alt="arrow up" height="100" width="100" />
-        </div>
-      </section>
       <section class="first-container">
-        <article>
-          <h2>Me</h2>
-        </article>
-        <article>
+        <!-- <article>
+          <img src="" alt="User Picture" height="100" width="100" />
+        </article> -->
+        <section class="img-container">
           <img
-            src="./kisspng-bender-planet-express-ship-vector-graphics-image-p-5d083a5b615135.2784017015608203153986.jpg"
-            alt="Random user"
+            src="./arrow.png"
+            alt=""
             height="100"
             width="100"
+            class="arrowUp"
+            id="arrowUp"
           />
+          <div>
+            <img src="./1-pierre.jpg" alt="" height="100" width="100" />
+          </div>
+          <div>
+            <img src="./2-feuille.jpg" alt="" height="100" width="100" />
+          </div>
+          <div>
+            <img src="./3-ciseaux.jpg" alt="" height="100" width="100" />
+          </div>
+          <img
+            src="./arrow.png"
+            alt=""
+            height="100"
+            width="100"
+            class="arrowDown"
+            id="arrowDown"
+          />
+        </section>
+      </section>
+      <section class="beind-the-parts">
+        <article>
+          <img src="./Bender_AI.jpg" alt="" height="150" width="150" />
         </article>
         <article>
-          <img src="" alt="" />
+          <img src="./3-ciseaux.jpg" alt="" height="250" width="250" />
         </article>
-        <article>
-          <h3>Score</h3>
+        <article class="score">
+          <h2>Score</h2>
+          <p>0</p>
         </article>
       </section>
-      <!--  -->
+      <div class="btn">
+        <button id="btn">play</button>
+      </div>
       <section class="second-container">
-        <article>
-          <h2>Me</h2>
-        </article>
-        <article>
+        <article class="first-player">
           <img
-            src="./kisspng-bender-planet-express-ship-vector-graphics-image-p-5d083a5b615135.2784017015608203153986.jpg"
-            alt="Random user"
-            height="100"
-            width="100"
+            src="./Bender_AI.jpg"
+            alt="IA Picture player one"
+            height="150"
+            width="150"
           />
+          <article class="img" id="ia-images">
+            <img
+              src="./1-pierre.jpg"
+              alt=""
+              height="250"
+              width="250"
+              id="stone"
+            />
+          </article>
+          <div class="score">
+            <h2>Score</h2>
+            <p>0</p>
+          </div>
         </article>
-        <article>
-          <img src="" alt="" />
+        <!-- <article class="second-player box">
+          <img
+            src="./Bender_AI.jpg"
+            alt="IA Picture player two"
+            height="50"
+            width="80"
+          />
+          <div>
+            <h2>Score</h2>
+          </div>
         </article>
-        <article>
-          <h3>Score</h3>
+        <article class="third-player">
+          <img
+            src="./Bender_AI.jpg"
+            alt="IA Picture player three"
+            height="50"
+            width="80"
+          />
+          <div>
+            <h2>Score</h2>
+          </div>
         </article>
+        <article class="fourth-player">
+          <img
+            src="./Bender_AI.jpg"
+            alt="IA Picture player four"
+            height="50"
+            width="80"
+          />
+          <div>
+            <h2>Score</h2>
+          </div>
+        </article>
+        <article class="fifth-player">
+          <img
+            src="./Bender_AI.jpg"
+            alt="IA Picture player five"
+            height="50"
+            width="80"
+          />
+          <div>
+            <h2>Score</h2>
+          </div>
+        </article> -->
       </section>
     </main>
-    <aside>
-      <button>Play</button>
-    </aside>
     <script src="./index.js"></script>
   </body>
 </html>
