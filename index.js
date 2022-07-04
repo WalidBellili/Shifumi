@@ -29,32 +29,25 @@ btn.addEventListener('click', (e) => {
            <img src="./1-pierre.jpg" height="250" width="250">
            `
        }
+
        }
-       imgDisplay()
-      const interval = () => {
-        setInterval(imgDisplay => {
-            let timer = 0
-            // if(timer > 200) {
-            //     clearInterval(interval)
-            // }
-        }
-
-            , 200)
-
-      }
-      interval()
-      
-      
-
-
-
-      
-
-
-
-
        
+
+       let timer = 0
+       const interval =  setInterval(() => {
+        
+            timer += 1
+            console.log("timer", timer);
+            imgDisplay()
+            if(timer === 5) {
+                clearInterval(interval)
+             }
+         } , 200)
+       
+       interval()
+      
 })
+
 
 
 
