@@ -31,28 +31,30 @@ btn.addEventListener('click', (e) => {
        }
        }
        imgDisplay()
-       setInterval(imgDisplay, 1000)
+      const interval = () => {
+        setInterval(imgDisplay => {
+            let timer = 0
+            // if(timer > 200) {
+            //     clearInterval(interval)
+            // }
+        }
+
+            , 200)
+
+      }
+      interval()
+      
+      
+
+
+
+      
+
+
+
+
+       
 })
 
-// const setInter = () => {
-//     console.log("Hello");
-// }
-// setInter()
-// setInterval(setInter, 2000)
 
-// const randomImg = Math.ceil(Math.random()*3) 
-// console.log(randomImg);
-// if (randomImg === 1) {
-//     stone.innerHTML = `
-//     <img src="./2-feuille.jpg" height="250" width="250">
-//     `
-// } else if(randomImg===2) {
-//     stone.innerHTML = `
-//     <img src="./3-ciseaux.jpg" height="250" width="250">
-//     `
-// } else {
-//     stone.innerHTML = `
-//     <img src="./1-pierre.jpg" height="250" width="250">
-//     `
-// }
 
