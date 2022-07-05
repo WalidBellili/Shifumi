@@ -1,11 +1,14 @@
 body {
   height: 100vh;
   width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 header {
   width: 100%;
   height: 8%;
-  background: green;
+  background: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +17,7 @@ header {
 main {
   height: 92vh;
   width: 100%;
-  background: yellow;
+  background: whitesmoke;
   display: flex;
   justify-content: space-between;
 }
@@ -25,14 +28,14 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background: red;
+  background: whitesmoke;
 }
 .user-btn div {
   display: flex;
   flex-direction: column;
 }
 .ia {
-  background: orange;
+  background: whitesmoke;
   width: 150%;
   height: 40%;
   display: flex;
@@ -42,7 +45,7 @@ main {
 }
 
 aside {
-  background: purple;
+  background: whitesmoke;
   height: 100%;
   width: 36%;
   display: flex;
@@ -52,13 +55,16 @@ aside {
 .result {
   width: 80%;
   height: 100%;
-  background: yellow;
+  background: whitesmoke;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
-
+.margin {
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
 .result button {
   width: 60%;
   height: 11%;
@@ -68,12 +74,12 @@ aside {
 /* Responsive Part */
 @media (min-width: 444px) {
   header {
-    background: blue;
+    background: whitesmoke;
   }
 }
 @media (min-width: 768px) {
   aside {
-    background: white;
+    background: whitesmoke;
   }
   .wrapper {
     display: flex;
@@ -89,10 +95,10 @@ aside {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background: red;
+    background: whitesmoke;
   }
   .ia {
-    background: orange;
+    background: whitesmoke;
     width: 100%;
     height: 55%;
     display: flex;
@@ -107,13 +113,13 @@ aside {
     width: 100%;
   }
   aside {
-    height: 877px;
+    height: 662px;
     width: 35%;
   }
   .result {
     width: 50%;
     height: 100%;
-    background: yellow;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
