@@ -19,11 +19,11 @@ main {
   justify-content: space-between;
 }
 .user-btn {
-  width: 250%;
+  width: 150%;
   height: 60%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: space-around;
   background: red;
 }
@@ -33,8 +33,12 @@ main {
 }
 .ia {
   background: orange;
-  width: 250%;
+  width: 150%;
   height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 aside {
@@ -54,9 +58,65 @@ aside {
   align-items: center;
   justify-content: center;
 }
+
 .result button {
   width: 60%;
   height: 11%;
   border-radius: 200px;
   border: 2px solid transparent;
+}
+/* Responsive Part */
+@media (min-width: 444px) {
+  header {
+    background: blue;
+  }
+}
+@media (min-width: 768px) {
+  aside {
+    background: white;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .user-btn {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: red;
+  }
+  .ia {
+    background: orange;
+    width: 100%;
+    height: 55%;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  main {
+    /* flex-wrap: wrap-reverse; */
+    height: 80%;
+    width: 100%;
+  }
+  aside {
+    height: 877px;
+    width: 35%;
+  }
+  .result {
+    width: 50%;
+    height: 100%;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
