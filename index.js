@@ -1,4 +1,5 @@
 const btn = document.querySelectorAll("button");
+const results = document.querySelector(".result");
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", () => {
@@ -14,6 +15,18 @@ for (let i = 0; i < btn.length; i++) {
       (player === "Ciseaux" && bot === "Feuille")
     ) {
       result = "Win";
+    } else {
+      result = "Loose";
     }
+    results.innerHTML = `
+    <article>
+    <h2>Bender : ${bot}</h2>
+  </article>
+  <button>Play</button>
+  <article>
+    <h2>Vous : ${player}</h2>
+  </article>
+  ${result}
+    `;
   });
 }

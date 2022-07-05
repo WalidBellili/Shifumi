@@ -15,9 +15,11 @@ main {
   height: 92vh;
   width: 100%;
   background: yellow;
+  display: flex;
+  justify-content: space-between;
 }
 .user-btn {
-  width: 75%;
+  width: 250%;
   height: 60%;
   display: flex;
   flex-direction: column;
@@ -31,6 +33,30 @@ main {
 }
 .ia {
   background: orange;
-  width: 75%;
+  width: 250%;
   height: 40%;
+}
+
+aside {
+  background: purple;
+  height: 100%;
+  width: 36%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result {
+  width: 80%;
+  height: 100%;
+  background: yellow;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.result button {
+  width: 60%;
+  height: 11%;
+  border-radius: 200px;
+  border: 2px solid transparent;
 }
