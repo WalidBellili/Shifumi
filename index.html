@@ -1,133 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>TITLE</h1>
-    </header>
+    <header>Let's Play to the Shifumi 's deaath</header>
+
     <main>
-      <section class="first-container">
-        <!-- <article>
-          <img src="" alt="User Picture" height="100" width="100" />
-        </article> -->
-        <section class="img-container">
-          <img
-            src="./arrow.png"
-            alt=""
-            height="100"
-            width="100"
-            class="arrowUp"
-            id="arrowUp"
-          />
+      <!-- ********************************************************** -->
+      <section class="player">
+        <article class="player-title">
+          <h2>Player</h2>
           <div>
-            <img src="./1-pierre.jpg" alt="" height="100" width="100" />
+            <p>Score</p>
+            <p id="player-score">0</p>
           </div>
-          <div>
-            <img src="./2-feuille.jpg" alt="" height="100" width="100" />
+        </article>
+        <article class="btn">
+          <div id="first">
+            <img src="./1-pierre.jpg" alt="" width="180" height="100" />
+            <button class="first-btn play" id="btnUn">Pierre</button>
           </div>
-          <div>
-            <img src="./3-ciseaux.jpg" alt="" height="100" width="100" />
-          </div>
-          <img
-            src="./arrow.png"
-            alt=""
-            height="100"
-            width="100"
-            class="arrowDown"
-            id="arrowDown"
-          />
-        </section>
-      </section>
-      <section class="beind-the-parts">
-        <article>
-          <img src="./Bender_AI.jpg" alt="" height="150" width="150" />
-        </article>
-        <article>
-          <img src="./3-ciseaux.jpg" alt="" height="250" width="250" />
-        </article>
-        <article class="score">
-          <h2>Score</h2>
-          <p>0</p>
-        </article>
-      </section>
-      <div class="btn">
-        <button id="btn">play</button>
-      </div>
-      <section class="second-container">
-        <article class="first-player">
-          <img
-            src="./Bender_AI.jpg"
-            alt="IA Picture player one"
-            height="150"
-            width="150"
-          />
-          <article class="img" id="ia-images">
+          <div id="second">
             <img
-              src="./1-pierre.jpg"
+              src="./2-feuille.jpg"
               alt=""
-              height="250"
-              width="250"
-              id="stone"
+              width="180"
+              height="100"
+              id="feuille"
             />
+            <button class="second-btn play" id="btnDeux">Feuille</button>
+          </div>
+          <div id="third">
+            <img
+              src="./3-ciseaux.jpg"
+              alt=""
+              width="180"
+              height="100"
+              id="ciseaux"
+            />
+            <button class="third-btn play" id="btnTrois">Ciseaux</button>
+          </div>
+        </article>
+      </section>
+      <!-- ********************************************************************* -->
+      <section class="iA-container">
+        <article class="iA-title">
+          <h2>I.A</h2>
+          <div>
+            <p>Score</p>
+            <p id="iA-score">0</p>
+          </div>
+        </article>
+        <div class="iA">
+          <article>
+            <div class="ia-img" id="place">
+              <img
+                src="./1-pierre.jpg"
+                alt=""
+                id="pierre"
+                width="180"
+                height="100"
+              />
+            </div>
           </article>
-          <div class="score">
-            <h2>Score</h2>
-            <p>0</p>
-          </div>
-        </article>
-        <!-- <article class="second-player box">
-          <img
-            src="./Bender_AI.jpg"
-            alt="IA Picture player two"
-            height="50"
-            width="80"
-          />
-          <div>
-            <h2>Score</h2>
-          </div>
-        </article>
-        <article class="third-player">
-          <img
-            src="./Bender_AI.jpg"
-            alt="IA Picture player three"
-            height="50"
-            width="80"
-          />
-          <div>
-            <h2>Score</h2>
-          </div>
-        </article>
-        <article class="fourth-player">
-          <img
-            src="./Bender_AI.jpg"
-            alt="IA Picture player four"
-            height="50"
-            width="80"
-          />
-          <div>
-            <h2>Score</h2>
-          </div>
-        </article>
-        <article class="fifth-player">
-          <img
-            src="./Bender_AI.jpg"
-            alt="IA Picture player five"
-            height="50"
-            width="80"
-          />
-          <div>
-            <h2>Score</h2>
-          </div>
-        </article> -->
+        </div>
       </section>
     </main>
+
+    <footer>
+      <button id="play" class="letsplay">Let's Play</button>
+      <button id="reset">RESET</button>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
