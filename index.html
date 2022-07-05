@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,74 +9,39 @@
     <title>Document</title>
   </head>
   <body>
-    <header>Let's Play to the Shifumi 's deaath</header>
-
+    <header>
+      <h1>Let's play to the shifumi of the death</h1>
+    </header>
     <main>
-      <!-- ********************************************************** -->
-      <section class="player">
-        <article class="player-title">
-          <h2>Player</h2>
-          <div>
-            <p>Score</p>
-            <p id="player-score">0</p>
-          </div>
-        </article>
-        <article class="btn">
-          <div id="first">
-            <img src="./1-pierre.jpg" alt="" width="180" height="100" />
-            <button class="first-btn play" id="btnUn">Pierre</button>
-          </div>
-          <div id="second">
-            <img
-              src="./2-feuille.jpg"
-              alt=""
-              width="180"
-              height="100"
-              id="feuille"
-            />
-            <button class="second-btn play" id="btnDeux">Feuille</button>
-          </div>
-          <div id="third">
-            <img
-              src="./3-ciseaux.jpg"
-              alt=""
-              width="180"
-              height="100"
-              id="ciseaux"
-            />
-            <button class="third-btn play" id="btnTrois">Ciseaux</button>
-          </div>
-        </article>
-      </section>
-      <!-- ********************************************************************* -->
-      <section class="iA-container">
-        <article class="iA-title">
-          <h2>I.A</h2>
-          <div>
-            <p>Score</p>
-            <p id="iA-score">0</p>
-          </div>
-        </article>
-        <div class="iA">
-          <article>
-            <div class="ia-img" id="place">
-              <img
-                src="./1-pierre.jpg"
-                alt=""
-                id="pierre"
-                width="180"
-                height="100"
-              />
-            </div>
-          </article>
+      <!-- Je place mes bouttons et images correspondantes dans cette section -->
+      <section class="user-btn">
+        <div>
+          <img src="./pierreUser.jpg" alt="" width="90" height="90" />
+          <button>Pierre</button>
+        </div>
+        <div>
+          <img src="./feuilleUser.jpg" alt="" width="90" height="90" />
+          <button>Feuille</button>
+        </div>
+        <div>
+          <img src="./ciseauxUser.jpg" alt="" width="90" height="90" />
+          <button>Ciseaux</button>
         </div>
       </section>
+      <!-- Fin de section -->
+      <!-- Section de ton IA -->
+      <section class="ia">
+        <article>
+          <img
+            src="./bender-tordeur-rodriguez-250.jpg"
+            alt=""
+            width="110"
+            height="100"
+          />
+        </article>
+      </section>
+      <!-- Fin de la section IA -->
     </main>
-
-    <footer>
-      <button id="play" class="letsplay">Let's Play</button>
-      <button id="reset">RESET</button>
-    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
